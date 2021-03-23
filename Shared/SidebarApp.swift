@@ -11,7 +11,11 @@ import SwiftUI
 struct SidebarApp: App {
     var body: some Scene {
         WindowGroup {
+            #if os(macOS)
             SidebarView()
+            #else
+            ContentView()
+            #endif
         }
     }
 }

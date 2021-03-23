@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-        Text("This is SwiftUI 2.").padding()
+        VStack {
+            Text("Hello, world!")
+            Text("Welcome to SwiftUI 2.").padding()
+        }.navigationTitle("Explore")
     }
 }
 
